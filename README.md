@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# student-management-system
 Student Management System written in C programming language. <br>
 =======
 Student Management System written in C programming language. <br> 
