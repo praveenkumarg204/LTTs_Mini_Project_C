@@ -3,6 +3,7 @@
 #include<stdlib.h>
 #include<math.h>
 #include <windows.h>
+#include "student_management_system.h"
 
 #define Student struct Stud
 
