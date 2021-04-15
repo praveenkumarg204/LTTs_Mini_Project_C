@@ -16,14 +16,6 @@ void printChar(char ch,int n);
 void title();
 FILE *tp;
 
-void gotoxy(int x,int y)
-{
-	COORD CRD;
-    CRD.X = x;
-    CRD.Y = y;
-    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),CRD);
-}
-
 struct pass
 {
 	char pass[25];
@@ -57,65 +49,19 @@ int main()
             return 0;
         }
     }
-    system("color 9f");
-	gotoxy(42,8);
-	printf("LOGIN(If 1st login press ENTER)");
-	gotoxy(42,10);
-	printf("____________________________________");
-	gotoxy(42,11);
-	printf("|\tEnter password :             |");
-	gotoxy(42,12);
-	printf("|__________________________________|");
-	//printf("\n\t\t\t\t\t");
-	gotoxy(65,11);
-	while( k<10)
-	{
-	    pas[k]=getch();
-	    char s=pas[k];
-	    if(s==13)
-		 break;
-	    else printf("*");
-	    k++;
-	}
-	pas[k]='\0';
-	tp=fopen("F:/Password.txt","r+");
-    fgets(pa.pass,25,tp);
-    if(strcmp(pas,pa.pass)==0)
-	{
-		system("cls");
-		gotoxy(10,3);
-		printf("<<<< Loading Please Wait >>>>");
-		for(i=0; i<5; i++)
-        {
-            printf("\t(*_*)");
-            Sleep(500);
-        }
-        printf(" \n\n\n\n\n\t\t\t\t\t     *  *  *  *  *  *  *  *");
-		printf("\n\n\t\t\t\t\t     *                    *");
-		printf("\n\n\t\t\t\t\t     *       Welcome      *");
-		printf("\n\n\n\n\n\t\t\t\t\tPress any key to continue...... ");
-		getch();
-
     title();
-    getch();
-
     while(1)
     {
         title();
         printf("\n\t");
-        printChar('*',64);
-
         printf("\n\n\t\t\t\t1. Add Student");
         printf("\n\n\t\t\t\t2. Modify Student");
         printf("\n\n\t\t\t\t3. Show All Student");
         printf("\n\n\t\t\t\t4. Individual View");
         printf("\n\n\t\t\t\t5. Remove Student");
-        printf("\n\n\t\t\t\t6. Change Password");
-        printf("\n\n\t\t\t\t7. Logout\n\t");
-        printChar('*',64);
-        printf("\n\n\t\t\t\tEnter Your Option :--> ");
+        printf("\n\n\t\t\t\t6. Exit\n\t");
+        printf("\n\n\t\t\t\tEnter Your Option : ");
         scanf("%d",&option);
-
         switch(option)
         {
             case 1:
@@ -134,11 +80,6 @@ int main()
                 fp=del(fp);
                 break;
             case 6:
-                    system("cls");
-				    system("color 5f");
-			        password();
-                break;
-            case 7:
                 return 1;
                 break;
             default:
@@ -148,42 +89,7 @@ int main()
                 system("pause");
         }
     }
-    }
-    else
-    {
-        printf("Wrong Password . Get Out");
-        getch();
-    }
-    return 1;
-
 }
-
-
-void password()
-{
-	char c;
-	printf("\nEnter new password :");
-	fflush(stdin);
-	gets(pa.pass);
-	printf("\nSave password (y/n) :");
-	fflush(stdin);
-	scanf("%c",&c);
-	if(c=='y'||c=='Y')
-	{
-		tp=fopen("F:/Password.txt","w+");
-	    fwrite(&pa,sizeof(pa),1,tp);
-	    fclose(tp);
-		printf("\n\tPassword Saved\n");
-	}
-	else
-	{
-		printf("Password not saved :\n");
-		printf("Press any key to continue >>>");
-		getch();
-	}
-}
-
-
 void printChar(char ch,int n)
 {
     while(n--)
