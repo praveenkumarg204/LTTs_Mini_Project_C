@@ -5,3 +5,5 @@ Student Management System written in C programming language. <br>
 
 
 [![Contribution Check - Git Inspector](https://github.com/praveenkumarg204/LTTs_Mini_Project_C/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/praveenkumarg204/LTTs_Mini_Project_C/actions/workflows/gitinspector.yml)
+
+[![Code Quality - Static Code - Cppcheck](https://github.com/praveenkumarg204/LTTs_Mini_Project_C/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/praveenkumarg204/LTTs_Mini_Project_C/actions/workflows/cppcheck.yml)
