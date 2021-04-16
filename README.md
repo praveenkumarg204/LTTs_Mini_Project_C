@@ -4,4 +4,4 @@ Student Management System written in C programming language. <br>
 </p>
 |Build|Unit Test|cppcheck|Valgrind|Codacy|
 |:--:|:--:|:--:|:--:|:--:|
-|![C/C++ CI]()|![Unit testing]()|![cppcheck-action]()|![Valgrind]()|[![Codacy Badge]
+|![C/C++ CI]()|![Unit testing]()|![cppcheck-action](https://github.com/praveenkumarg204/LTTs_Mini_Project_C/actions/workflows/cppcheck.yml)|![Valgrind]()|[![Codacy Badge]
