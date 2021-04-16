@@ -1,17 +1,23 @@
-name: Unit Testing - Unity
+name: Unit testing
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
-  test:
+  build:
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: make
-      run: make -C implementation/ Test
+    - name: Install Cunit
+      run: sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
+      
+    - name: install math library
+      run:  sudo apt-get install -y libmath-libm-perl 
+      
+    - name: make test 
+      run:  make test
