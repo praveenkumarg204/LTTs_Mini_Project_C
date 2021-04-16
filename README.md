@@ -9,4 +9,3 @@ Student Management System written in C programming language. <br>
 
 [![Code Quality - Static Code - Cppcheck](https://github.com/praveenkumarg204/LTTs_Mini_Project_C/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/praveenkumarg204/LTTs_Mini_Project_C/actions/workflows/cppcheck.yml)
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/cdd42a96530649b9b961b71459af9955)](https://www.codacy.com/gh/praveenkumarg204/LTTs_Mini_Project_C/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=praveenkumarg204/LTTs_Mini_Project_C&amp;utm_campaign=Badge_Grade)
