@@ -5,7 +5,21 @@
 #include <windows.h>
 #include "student_management_system.h"
 
+#define Student struct Stud
 FILE *tp;
+struct pass
+{
+	char pass[25];
+}pa;
+
+struct Stud
+{
+    char name[100];
+    char dept[50];
+    int roll;
+    float sgpa[12];
+    float cgpa;
+};
 
 
 int main()
