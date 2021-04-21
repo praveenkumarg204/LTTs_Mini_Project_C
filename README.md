@@ -14,3 +14,5 @@ Student Management System written in C programming language. <br>
 
 [![C/C++ CI](https://github.com/praveenkumarg204/LTTs_Mini_Project_C/actions/workflows/c-build.yml/badge.svg)](https://github.com/praveenkumarg204/LTTs_Mini_Project_C/actions/workflows/c-build.yml)
 
+[![CI-Coverage](https://github.com/praveenkumarg204/LTTs_Mini_Project_C/actions/workflows/CI-Coverage.yml/badge.svg)](https://github.com/praveenkumarg204/LTTs_Mini_Project_C/actions/workflows/CI-Coverage.yml)
+
