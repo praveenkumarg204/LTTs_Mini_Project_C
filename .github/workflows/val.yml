@@ -20,4 +20,4 @@ jobs:
     - name: make test
       run: main.c
         make main.c
-        valgrind ./main.c
+        valgrind ./main.exe
